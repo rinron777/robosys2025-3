@@ -1,0 +1,25 @@
+name: ROS2 Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup ROS2
+        run: |
+          sudo apt update
+          sudo apt install -y software-properties-common
+          sudo add-apt-repository universe
+          sudo apt update
+          sudo apt install -y ros-humble-ros-base python3-colcon-common-extensions
+
+      - name: Run test.bash
+        run: |
+          bash ros2_ws/test.bash
+
