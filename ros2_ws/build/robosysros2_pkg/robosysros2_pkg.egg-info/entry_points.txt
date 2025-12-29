@@ -1,4 +1,0 @@
-[console_scripts]
-cpu_usage_listener = robosysros2_pkg.cpu_usage_listener:main
-cpu_usage_publisher = robosysros2_pkg.cpu_usage_publisher:main
-
