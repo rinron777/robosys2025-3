@@ -25,8 +25,6 @@ def main():
     except (KeyboardInterrupt,
             rclpy.executors.ExternalShutdownException):
         pass
-    except rclpy.executors.ExternalShutdownException:
-        pass
     finally:
         node.destroy_node()
         if rclpy.ok():
