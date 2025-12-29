@@ -16,14 +16,19 @@ class CpuUsageListener(Node):
     def callback(self, msg):
         self.get_logger().info(f'Listen: {msg.data}')
 
-
 def main():
     rclpy.init()
     node = CpuUsageListener()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
 
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    except rclpy.executors.ExternalShutdownException:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

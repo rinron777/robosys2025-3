@@ -37,14 +37,19 @@ class CpuUsagePublisher(Node):
         self.prev_idle = idle
         self.prev_total = total
 
-
 def main():
     rclpy.init()
     node = CpuUsagePublisher()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
 
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    except rclpy.executors.ExternalShutdownException:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
