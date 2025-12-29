@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating robosysros2_pkg.egg-info
+writing robosysros2_pkg.egg-info/PKG-INFO
+writing dependency_links to robosysros2_pkg.egg-info/dependency_links.txt
+writing entry points to robosysros2_pkg.egg-info/entry_points.txt
+writing requirements to robosysros2_pkg.egg-info/requires.txt
+writing top-level names to robosysros2_pkg.egg-info/top_level.txt
+writing manifest file 'robosysros2_pkg.egg-info/SOURCES.txt'
+reading manifest file 'robosysros2_pkg.egg-info/SOURCES.txt'
+writing manifest file 'robosysros2_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/lib/python3.10/site-packages/robosysros2-pkg.egg-link (link to .)
+Installing cpu_usage_listener script to /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/lib/robosysros2_pkg
+Installing cpu_usage_publisher script to /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/lib/robosysros2_pkg
+
+Installed /home/tiba07/robosys2025-3/ros2_ws/build/robosysros2_pkg
+running symlink_data
+creating /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/share/ament_index
+creating /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/share/ament_index/resource_index
+creating /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/tiba07/robosys2025-3/ros2_ws/build/robosysros2_pkg/resource/robosysros2_pkg -> /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/tiba07/robosys2025-3/ros2_ws/build/robosysros2_pkg/package.xml -> /home/tiba07/robosys2025-3/ros2_ws/install/robosysros2_pkg/share/robosysros2_pkg
