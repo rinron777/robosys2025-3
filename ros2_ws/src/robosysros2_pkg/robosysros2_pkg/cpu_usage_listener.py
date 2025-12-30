@@ -21,12 +21,17 @@ def main():
     node = CpuUsageListener()
 
     try:
-        rclpy.spin(node)
-    except (KeyboardInterrupt,
-            rclpy.executors.ExternalShutdownException):
+    rclpy.spin(node)
+
+    except KeyboardInterrupt:
         pass
+    except rclpy.executors.ExternalShutdownException:
+        pass
+
     finally:
         node.destroy_node()
+        rclpy.shutdown()
+
         if rclpy.ok():
             rclpy.shutdown()
 
