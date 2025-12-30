@@ -15,7 +15,7 @@ setup(
     zip_safe=True,
     maintainer='tiba07',
     maintainer_email='github4273senyou564@gmail.com',
-    description='TODO: Package description',
+    description='CPU usage publisher package',
     license='BSD-3-Clause',
     extras_require={
         'test': [
