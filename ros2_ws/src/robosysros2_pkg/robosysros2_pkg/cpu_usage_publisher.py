@@ -43,12 +43,8 @@ def main():
 
     try:
         rclpy.spin(node)
-
     except KeyboardInterrupt:
         pass
-    except rclpy.executors.ExternalShutdownException:
-        pass
-
     finally:
         node.destroy_node()
         rclpy.shutdown()
