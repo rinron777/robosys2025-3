@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) 2025 Rintarou Matsunaga
+# Licensed under the BSD 3-Clause License.
 
 source /opt/ros/humble/setup.bash
 cd "$(dirname "$0")/../.."
