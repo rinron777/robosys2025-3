@@ -39,19 +39,18 @@ class CpuUsagePublisher(Node):
 
 def main():
     rclpy.init()
-    node = CpuUsagePublisher()
+    node = CpuUsagePublisher()  # or Publisher
 
     try:
         rclpy.spin(node)
 
-    except KeyboardInterrupt:
-        pass
-
-    except rclpy.executors.ExternalShutdownException:
+    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
         pass
 
     finally:
         node.destroy_node()
+
+    return 0
 
 if __name__ == '__main__':
     main()

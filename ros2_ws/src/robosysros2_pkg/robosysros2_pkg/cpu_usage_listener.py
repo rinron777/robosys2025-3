@@ -18,19 +18,18 @@ class CpuUsageListener(Node):
 
 def main():
     rclpy.init()
-    node = CpuUsageListener()
+    node = CpuUsageListener()  # or Publisher
 
     try:
         rclpy.spin(node)
 
-    except KeyboardInterrupt:
-        pass
-
-    except rclpy.executors.ExternalShutdownException:
+    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
         pass
 
     finally:
         node.destroy_node()
+
+    return 0
 
 if __name__ == '__main__':
     main()
