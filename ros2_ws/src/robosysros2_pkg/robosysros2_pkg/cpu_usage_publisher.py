@@ -1,3 +1,7 @@
+
+# Copyright (c) 2025 Rintarou Matsunaga
+# Licensed under the BSD 3-Clause License.
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
